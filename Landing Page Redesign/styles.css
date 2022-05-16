@@ -1051,6 +1051,16 @@ ul {
     }
 
     /* Static Numbers Section */
+    .orangeNumberSection { 
+        padding-left: 10vw; 
+        padding-right: 10vw; 
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        /* grid-template-rows: fit-content(1fr 1fr 1fr 1fr) !important; */
+        grid-template-rows: auto; 
+        margin-bottom: 0; 
+    }
+
     /* 1 Proffesional Recognition */
 
     /* 2 Industry 4.0 */
