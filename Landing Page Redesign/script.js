@@ -69,7 +69,7 @@ tl.to(".movingText2", {duration: 0.5, ease: 'linear', x: -full2}, 1);
 tl.to(".movingText3", {duration: 0.5, ease: 'linear', x: -half}, "<");
 tl.to(".movingText3", {duration: 0.5, ease: 'linear', x: -half});
 tl.to("#firstImage", {duration: 1, ease: 'linear', x: -imageMove});
-tl.to("#firstImage", {duration: 1, ease: 'linear', y: -imageMoveUp}, "<");
+tl.to("#firstImage", {duration: 2, ease: 'linear', y: -imageMoveUp}, "<-1");
 tl.to(".subsection2", {duration: 2, ease: 'linear', y: -fullh});
 tl.to("#stickyLogo", {duration: 0.5, ease: 'linear', opacity: 1}, "<");
 
