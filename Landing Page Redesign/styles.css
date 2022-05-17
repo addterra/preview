@@ -903,7 +903,8 @@ ul {
         width: 7vw; 
         position: fixed; 
         top: 8vw;
-        right: 5vw;   
+        right: 4.5vw;  
+        background-color: rgb(255, 255, 255);   
     }
 
     /* Opening Screen */
@@ -1050,6 +1051,10 @@ ul {
         display: none; 
     }
 
+    .leftBorder {
+        margin-left: 10vw; 
+    }
+
     /* Static Numbers Section */
     .orangeNumberSection { 
         padding-left: 10vw; 
@@ -1059,6 +1064,54 @@ ul {
         /* grid-template-rows: fit-content(1fr 1fr 1fr 1fr) !important; */
         grid-template-rows: auto; 
         margin-bottom: 0; 
+    }
+
+    .numberBox h3 {
+        font-size: 7vw; 
+    }
+
+    .numberBox p {
+        font-size: 20vw; 
+    }
+
+    .number2Left {
+        max-width: 100%; 
+        border-right: 2px solid black; 
+        border-top: 2px solid black; 
+        grid-column: 1/4; 
+        grid-row: 2/3; 
+        padding-bottom: 20vmin; 
+        box-sizing: border-box; 
+    } 
+
+    .number3Right {
+        grid-row: 3/4;
+        grid-column: 1/4;
+        width: 100%; 
+        border-left: 2px solid black; 
+        padding-bottom: 20vh; 
+    }
+
+    #borderLeft {
+        width: 99.6%;
+        border-top: 2px solid black; 
+    }
+
+    .section4 {
+        grid-column: 1/4; 
+        grid-row: 4/5; 
+        padding: 5vw; 
+        padding-left: 15vw; 
+        padding-bottom: 10vw; 
+        border-left: none; 
+        border-right: 2px solid black; 
+    }
+
+    .border2 {
+        border-top: 2px solid black;
+        width: 133.6%;
+        margin-left: -15vw; 
+        margin-top: -5vw;  
     }
 
     /* 1 Proffesional Recognition */
