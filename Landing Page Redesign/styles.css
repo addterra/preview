@@ -241,7 +241,7 @@ ul {
 
 .leftBorder {
     margin-left: 13vw; 
-    border-left: 2px solid black;
+    border-left: 1.8px solid black;
     width: 5vw; 
     height: 200vh;  
     position: absolute; 
@@ -277,7 +277,7 @@ ul {
 }
 
 #line2 {
-    border-bottom: 2px solid black; 
+    border-bottom: 1.8px solid black; 
     width: 80%; 
 }
 
@@ -366,7 +366,7 @@ ul {
 
 .number1 {
     background-color: rgb(255, 255, 255); 
-    border-left: 2px solid black; 
+    border-left: 1.8px solid black; 
     padding: 25px; 
     position: relative; 
     display: block;
@@ -449,8 +449,8 @@ ul {
 
 .number2Left {
     max-width: 100%; 
-    border-right: 2px solid black; 
-    border-top: 2px solid black; 
+    border-right: 1.8px solid black; 
+    border-top: 1.8px solid black; 
     grid-column: 1/3; 
     grid-row: 2/3; 
     padding-bottom: 20vmin; 
@@ -530,7 +530,7 @@ ul {
     grid-row: 3/4;
     grid-column: 2/4;
     width: 100%; 
-    border-left: 2px solid black; 
+    border-left: 1.8px solid black; 
     padding-bottom: 20vh; 
 }
 
@@ -560,8 +560,9 @@ ul {
 }
 
 #borderLeft {
-    width: 49.7%;
-    border-top: 2px solid black; 
+    width: 49.8%;
+    margin-left: -0.1%; 
+    border-top: 1.8px solid black; 
 }
 
 .number3Left p {
@@ -593,12 +594,12 @@ ul {
     padding: 5vw; 
     padding-left: 15vw; 
     padding-bottom: 10vw; 
-    border-left: 2px solid black; 
+    border-left: 1.8px solid black; 
 }
 
 .border2 {
-    border-top: 2px solid black;
-    width: 46%;
+    border-top: 1.8px solid black;
+    width: 45.7%;
     margin-left: -15vw; 
     margin-top: -5vw;  
 }
@@ -615,8 +616,8 @@ ul {
 /* section 5 */
 
 .section5 {
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    border-top: 1.8px solid black;
+    border-bottom: 1.8px solid black;
     width: 100%;
     min-height: 50vw; 
     box-sizing: border-box; 
@@ -775,7 +776,7 @@ ul {
 }
 
 .contactButton {
-    border: 2px solid black; 
+    border: 1.8px solid black; 
     position: relative; 
     margin:auto; 
     padding: 1vw;
@@ -1086,8 +1087,8 @@ ul {
 
     .number2Left {
         max-width: 100%; 
-        border-right: 2px solid black; 
-        border-top: 2px solid black; 
+        border-right: 1.8px solid black; 
+        border-top: 1.8px solid black; 
         grid-column: 1/4; 
         grid-row: 2/3; 
         padding-bottom: 20vmin; 
@@ -1098,13 +1099,13 @@ ul {
         grid-row: 3/4;
         grid-column: 1/4;
         width: 100%; 
-        border-left: 2px solid black; 
+        border-left: 1.8px solid black; 
         padding-bottom: 20vh; 
     }
 
     #borderLeft {
-        width: 99.6%;
-        border-top: 2px solid black; 
+        width: 99.7%;
+        border-top: 1.8px solid black; 
     }
 
     .section4 {
@@ -1114,11 +1115,11 @@ ul {
         padding-left: 15vw; 
         padding-bottom: 10vw; 
         border-left: none; 
-        border-right: 2px solid black; 
+        border-right: 1.8px solid black; 
     }
 
     .border2 {
-        border-top: 2px solid black;
+        border-top: 1.8px solid black;
         width: 133.6%;
         margin-left: -15vw; 
         margin-top: -5vw;  
