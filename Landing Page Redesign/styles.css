@@ -1271,40 +1271,42 @@ ul {
     /* 5 Board of Advisors */
 
     .section5 {
-        border-top: 1.8px solid black;
-        border-bottom: 1.8px solid black;
         width: 100%;
         min-height: 50vw; 
-        box-sizing: border-box; 
-        padding-left: 12.5vw; 
-        padding-right: 12.5vw; 
         position: relative; 
     }
 
     .advisors {
-        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
-        grid-gap: 2vw; 
-        width: 75vw;
+        grid-gap: 4vh; 
+        width: 65vw;
         position: relative; 
         left: 0;
         top: 0;   
+        margin: auto; 
+        padding-bottom: 10vh; 
     }
 
     .box {
-        width: 15vw; 
-        max-width: 15vw;
+        max-width: 100%;
         width: 100%; 
         position: relative; 
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.274), 0 6px 20px 0 rgba(0, 0, 0, 0.269);
-    }
-    
-    .box img {
-        max-width: 100%; 
-        width: 100%;
+        height: 99%;  
     }
 
+    .box img {
+        min-height: 100%; 
+    }
+
+    .names {
+        padding: 1.5vh; 
+        padding-bottom: 1.3vh; 
+        width: 80%; 
+        border-radius: 0 5vw 0 0;  
+        font-size: 5vw; 
+    }
+    
     /* Contact Section */
 
     /* Footer */
