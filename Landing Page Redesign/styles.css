@@ -1276,6 +1276,17 @@ ul {
         position: relative; 
     }
 
+    #numberBox5 p, #numberBox5 h3{
+        text-align: center; 
+    }
+
+    #numberBox5 {
+        margin: auto; 
+        margin-top: 10vh;
+        margin-bottom: 8vh; 
+        width: 50vw; 
+    }
+
     .advisors {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
