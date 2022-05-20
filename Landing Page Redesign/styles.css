@@ -1180,23 +1180,6 @@ ul {
         border-top: 1.8px solid black; 
     }
 
-    .section4 {
-        grid-column: 1/4; 
-        grid-row: 4/5; 
-        padding: 5vw; 
-        padding-left: 15vw; 
-        padding-bottom: 10vw; 
-        border-left: none; 
-        border-right: 1.8px solid black; 
-    }
-
-    .border2 {
-        border-top: 1.8px solid black;
-        width: 133.6%;
-        margin-left: -15vw; 
-        margin-top: -5vw;  
-    }
-
     /* 1 Proffesional Recognition */
     .number1 {
         background-color: rgb(255, 255, 255); 
@@ -1245,11 +1228,82 @@ ul {
 
     /* 2 Industry 4.0 */
 
+    .subheading {
+        font-family: 'Zen Kurenaido', sans-serif;
+        font-size: 6vw; 
+        margin-left: 30px;
+    }
+
+    #subheading2 {
+        margin-top: 5vh; 
+    }
+
     /* 3 Infrastructure 4.0 */
+
+    #numberBox3 {
+        margin-bottom: 10vh; 
+    }
+
 
     /* 4 Addterra */
 
+    .section4 {
+        grid-column: 1/4; 
+        grid-row: 4/5; 
+        padding: 5vw; 
+        padding-left: 0vw; 
+        padding-bottom: 10vw; 
+        border-left: none; 
+        border-right: 1.8px solid black; 
+    }
+
+    .border2 {
+        border-top: 1.8px solid black;
+        width: 107.3%;
+        margin-left: 0vw; 
+        margin-top: -5vw;  
+    }
+
+    #image4 {
+        width: 85%; 
+    }
+
     /* 5 Board of Advisors */
+
+    .section5 {
+        border-top: 1.8px solid black;
+        border-bottom: 1.8px solid black;
+        width: 100%;
+        min-height: 50vw; 
+        box-sizing: border-box; 
+        padding-left: 12.5vw; 
+        padding-right: 12.5vw; 
+        position: relative; 
+    }
+
+    .advisors {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+        grid-gap: 2vw; 
+        width: 75vw;
+        position: relative; 
+        left: 0;
+        top: 0;   
+    }
+
+    .box {
+        width: 15vw; 
+        max-width: 15vw;
+        width: 100%; 
+        position: relative; 
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.274), 0 6px 20px 0 rgba(0, 0, 0, 0.269);
+    }
+    
+    .box img {
+        max-width: 100%; 
+        width: 100%;
+    }
 
     /* Contact Section */
 
