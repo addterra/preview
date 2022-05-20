@@ -1198,6 +1198,50 @@ ul {
     }
 
     /* 1 Proffesional Recognition */
+    .number1 {
+        background-color: rgb(255, 255, 255); 
+        border-left: 1.8px solid black; 
+        padding: 25px; 
+        position: relative; 
+        display: block;
+        height: auto;
+        padding-bottom: 60px; 
+        grid-row: 1/2; 
+        grid-column: 1/4; 
+    }
+
+    #margin {
+        margin-top: 5vh;
+    }
+
+    .awardText { 
+        text-align: left;
+        text-justify: none;
+        margin-top: 10vh; 
+    }
+    
+    .awardText h2 {
+        margin-bottom: 0px; 
+        text-align: left; 
+        font-size: 7vw; 
+    }
+    
+    .awardText h3 {
+        font-size: 5vw;
+        font-weight: 200; 
+    }
+    
+    .awardText p {
+        font-size: 5vw;
+        font-family: 'Quicksand';
+    }
+    
+    .awardText a {
+        text-decoration: none; 
+        color: #eb5a00;
+        font-weight: 600; 
+    }
+    
 
     /* 2 Industry 4.0 */
 
