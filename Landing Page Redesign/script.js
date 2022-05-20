@@ -125,7 +125,7 @@ function popDown5() {
 
 // text slider code 
 
-const _C = document.querySelector('.container'), 
+const _C = document.querySelector('.slider'), 
       N = _C.children.length;
 
 let i = 0, x0 = null, locked = false, w;

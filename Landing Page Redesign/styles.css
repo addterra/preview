@@ -991,8 +991,8 @@ ul {
     /* Moving text Screens */
     
     .left_text {
-        max-width: 100vw;
-        width: 100vw; 
+        min-width: 100vw; 
+        width: 100%; 
         text-align: center; 
     }
 
@@ -1005,6 +1005,31 @@ ul {
         margin-left: 10%; 
     }
 
+    .slider {
+        --n: 1;
+        display: flex;
+        align-items: center;
+        overflow-y: hidden;
+        width: 100%; 
+        width: calc(var(--n)*100%);
+        height: 50vw; max-height: 100vh;
+        transform: translate(calc(var(--tx, 0px) + var(--i, 0)/var(--n)*-100%));
+    }   
+
+    .slider p {
+        display: block; 
+        width: 100%; 
+        width: calc(100%/var(--n));
+        user-select: none;
+        pointer-events: none;
+        position: relative; 
+        top: 0; 
+        left: 0; 
+    }
+
+    .smooth { transition: transform  calc(var(--f, 1)*.5s) ease-out }
+
+    
     .movingText1 {
         width: 100vw; 
         padding-top: 5vh;
@@ -1022,8 +1047,7 @@ ul {
         padding-right: 10vw; 
         font-size: 6vw; 
         text-align: center; 
-
-        left: 100vw; 
+        position: relative; 
     }
 
     .movingText3 {
@@ -1033,8 +1057,7 @@ ul {
         padding-right: 10vw; 
         font-size: 6vw; 
         text-align: center;  
-
-        left: 100vw; 
+        position: relative; 
     }
 
     /* Nav Dots */
@@ -1047,6 +1070,9 @@ ul {
         display: flex;
         flex-direction: row; 
         justify-content:space-between; 
+        position: absolute;
+        bottom: 10vh; 
+        left: 37vw; 
     }
     
     .navCircle1 {
