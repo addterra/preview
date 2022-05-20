@@ -122,7 +122,7 @@ function popDown5() {
 }
 
 
-
+//
 // text slider code 
 
 const _C = document.querySelector('.slider'), 
@@ -152,12 +152,19 @@ function move(e) {
     if((i > 0 || s < 0) && (i < N - 1 || s > 0) && f > .2) {
 			_C.style.setProperty('--i', i -= s);
 			f = 1 - f
+      // circle nav code
+      document.querySelector(`.navCircle1`).style.backgroundColor = "white";
+      document.querySelector(`.navCircle2`).style.backgroundColor = "white";
+      document.querySelector(`.navCircle3`).style.backgroundColor = "white";
+      document.querySelector(`.navCircle${i+1}`).style.backgroundColor = "rgba(0, 0, 0, 0.185)";
+
 		}
 		
     _C.style.setProperty('--tx', '0px');
 		_C.style.setProperty('--f', f);
     _C.classList.toggle('smooth', !(locked = false));
     x0 = null
+
   }
 };
 
@@ -176,3 +183,8 @@ _C.addEventListener('touchmove', drag, false);
 
 _C.addEventListener('mouseup', move, false);
 _C.addEventListener('touchend', move, false);
+
+
+
+// function to change slider buttons accuratley
+
