@@ -1072,9 +1072,11 @@ ul {
         display: flex;
         flex-direction: row; 
         justify-content:space-between; 
-        position: absolute;
+        position: relative;
         bottom: 10vh; 
-        left: 37vw; 
+        /*left: 37vw; */
+        left: 0; 
+        padding-top: 20px; 
     }
     
     .navCircle1 {
