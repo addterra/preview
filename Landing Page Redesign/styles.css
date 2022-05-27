@@ -980,11 +980,11 @@ ul {
     }
 
     #link1mobile {
-        display: none; 
+        display: inline; 
     }
 
     #link1desktop {
-        display: inline; 
+        display: none; 
     }
 
     .circle {
