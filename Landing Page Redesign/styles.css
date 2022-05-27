@@ -922,6 +922,9 @@ ul {
         padding: 5px;
         padding-left: 15px;
         box-sizing:content-box;  
+        position: relative; 
+        z-index: 100; 
+        padding-bottom: 20px; 
     }
 
     .careerBanner h3 {
@@ -936,6 +939,7 @@ ul {
         font-weight: 400;
         font-size: 6vw; 
         color: white; 
+        padding-bottom: 20px; 
     }
 
     .careerBanner a:visited {
@@ -976,11 +980,11 @@ ul {
     }
 
     #link1mobile {
-        display: inline; 
+        display: none; 
     }
 
     #link1desktop {
-        display: none; 
+        display: inline; 
     }
 
     .circle {
@@ -988,37 +992,40 @@ ul {
     }
 
     .line {
-        width: 50vw; 
+        width: 60vw; 
         margin-top: -1.5vw; 
         margin-left: 3vw; 
     }
 
+    .section1{
+        position: relative;
+        height: 130vh; 
+        max-height: 130vh; 
+    }
+
     /* link 1 */
     .group1 {
-        bottom: 30vh;
+        bottom: 55vh;
     }
     /* link 2 */
     .group2 {
-        bottom: 28vh;
-        display: none; 
+        bottom: 45vh;
     }
     /* link 3 */
     .group3 {
-        bottom: 22vh;
-        display: none; 
+        bottom: 35vh;
     }
     /* link 4 */
     .group4 {
-        bottom: 16vh;
-        display: none; 
+        bottom: 25vh;
     }
     /* link 5 */
     .group5 {
-        bottom: 20vh;
+        bottom: 15vh;
     }
     /* link 6 */
     .group6 {
-        bottom: 10vh; 
+        bottom: 5vh; 
     }
 
     /* Moving text Screens */
@@ -1116,7 +1123,7 @@ ul {
         /*left: 37vw; */
         left: 0; 
         padding-top: 20px; 
-        padding-bottom: 30px; 
+        padding-bottom: 50px; 
     }
     
     .navCircle1 {
@@ -1147,9 +1154,16 @@ ul {
         height: 100vh; 
         width: auto;  
         position: absolute;   
-        top: 100vh; 
+        top: 105vh; 
         left: 0;
         clip: rect(0, 100vw, 100vh, 0);
+    }
+
+    .section2 {
+        max-width: 100%;
+        height: 300vh; 
+        position: relative; 
+        /* overflow: hidden; */     
     }
 
     .subsection2 {
