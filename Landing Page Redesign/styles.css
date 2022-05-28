@@ -868,6 +868,13 @@ ul {
     display: none; 
 }
 
+#mobileLines2 {
+    display: none; 
+}
+
+#mobileLines3 {
+    display: none; 
+}
 
 /* !!!!!! */
 /* !!!!!! */
@@ -1209,22 +1216,12 @@ ul {
         font-size: 20vw; 
     }
 
-    .number2Left {
-        max-width: 100%; 
-        border-right: 1.8px solid black; 
-        border-top: 1.8px solid black; 
-        grid-column: 1/4; 
-        grid-row: 2/3; 
-        padding-bottom: 20vmin; 
-        box-sizing: border-box; 
-    } 
-
     .number3Right {
         grid-row: 3/4;
         grid-column: 1/4;
         width: 100%; 
         border-left: 1.8px solid black; 
-        padding-bottom: 20vh; 
+        padding-bottom: 10vh; 
     }
 
     #borderLeft {
@@ -1290,10 +1287,91 @@ ul {
         margin-top: 5vh; 
     }
 
+    #mobileLines2 {
+        display: block; 
+    }
+
+    .number2Left {
+        max-width: 100%; 
+        border-right: 1.8px solid black; 
+        border-top: 1.8px solid black; 
+        grid-column: 1/4; 
+        grid-row: 2/3; 
+        padding-bottom: 20vmin; 
+        box-sizing: border-box;  
+    } 
+
+     /*  circle lines Section 2 */ 
+
+     .number2Right {
+        display: none; 
+    }
+
+    .lines1 {
+        margin-top: 10vh; 
+        margin-left: 10%; 
+        margin-right: 0;  
+        position: relative;
+        bottom: 0vh;
+        text-align: left;
+    }
+
+    .lines1 p {
+        padding-left: 8px;
+        padding-bottom: 8px; 
+        margin: 0; 
+        margin-top: 30px; 
+        font-size: 5vw;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    .line2 {
+        width: 95%; 
+        margin-left: 5%; 
+    }
+
+    .circle2 {
+        margin-right: 100%; 
+        margin-left: 1%; 
+        width: 4%; 
+        margin-top: -2.3%; 
+    }
+
     /* 3 Infrastructure 4.0 */
 
     #numberBox3 {
         margin-bottom: 10vh; 
+    }
+
+    /* circle lines section 3 */ 
+
+    #mobileLines3 {
+        display: block; 
+        text-align: right;
+        margin-left: 0; 
+        margin-right: 0%;  
+        margin-bottom: 3vh; 
+    }
+
+    .number3Left {
+        display: none; 
+    }
+
+    #mobileLines3 p{
+        padding-right: 15px; 
+    }
+
+    #mobileLines3 .line2 {
+        width: 95%; 
+        margin-right: 5%; 
+        margin-left: 0;
+    }
+
+    #mobileLines3 .circle2 {
+        margin-right: 5%; 
+        margin-left: 95%; 
+        width: 4%; 
+        margin-top: -2.3%; 
     }
 
 
