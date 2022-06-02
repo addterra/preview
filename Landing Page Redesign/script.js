@@ -97,6 +97,14 @@ function popDown2() {
   document.querySelector('#rick').style.display = "none"; 
 }
 
+//Mark 
+function popUp6() {
+  document.querySelector('#mark').style.display = "block"; 
+}
+function popDown6() {
+  document.querySelector('#mark').style.display = "none"; 
+}
+
 //Jorhena 
 function popUp3() {
   document.querySelector('#jor').style.display = "block"; 
