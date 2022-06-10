@@ -876,12 +876,15 @@ ul {
     display: none; 
 }
 
+
+/* design for ipad */ 
+
+
 /* !!!!!! */
 /* !!!!!! */
 /* !!!!!! */
 /* Complete Mobile Redesign */ 
 /* !!!!!! */
-
 
 @media screen and (max-width: 580px) {
 
