@@ -97,6 +97,14 @@ function popDown2() {
   document.querySelector('#rick').style.display = "none"; 
 }
 
+//Brian
+function popUpB() {
+  document.querySelector('#brian').style.display = "block"; 
+}
+function popDownB() {
+  document.querySelector('#brian').style.display = "none"; 
+}
+
 //Mark 
 function popUp6() {
   document.querySelector('#mark').style.display = "block"; 

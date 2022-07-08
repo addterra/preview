@@ -149,6 +149,32 @@ ul {
     color: #000000;
 }
 
+/* awards logos */
+
+.logos {
+    max-width: 11vw; 
+    box-sizing: border-box; 
+    position: absolute;
+    left: 14vw;
+    top: 65vh;
+    z-index: 100; 
+}
+
+.logos img {
+    max-width: 38%;
+    width: 37%;  
+    display: inline; 
+    padding-bottom: 5px; 
+}
+
+.logos .forum {
+    width: 60%; 
+    max-width: 61%;
+    padding-top: 5px; 
+    padding-bottom: 0px; 
+}
+
+
 /* links on opening screen */
 
 .text1 {
@@ -635,10 +661,10 @@ ul {
 
 .advisors {
     display: grid;
-    grid-template-columns: 15vw 15vw 15vw;
-    grid-template-rows: 15vw 15vw; 
+    grid-template-columns: 12vw 12vw 12vw 12vw;
+    grid-template-rows: 12vw 12vw; 
     grid-gap: 2vw; 
-    width: 50vw;
+    width: 55vw;
     position: absolute; 
     left: 35vw;
     top: 15vh;   
@@ -670,7 +696,7 @@ ul {
     border-radius: 0 2vw 0 0; 
     color: white; 
     font-family: 'Quicksand', sans-serif; 
-    font-size: 1.2vw; 
+    font-size: 1.1vw; 
 }
 
 .names p {
@@ -870,6 +896,7 @@ ul {
 
 .careerBanner {
     display: none; 
+    text-align: center;
 }
 
 #mobileLines2 {
@@ -942,7 +969,7 @@ ul {
         background-color: rgb(120, 20, 20);  
         color: white;
         padding: 5px;
-        padding-left: 15px;
+        padding-left: 0px;
         box-sizing:content-box;  
         position: relative; 
         z-index: 100; 
@@ -974,7 +1001,7 @@ ul {
         max-width: 70vw; 
         max-height: auto;  
         left: 15%;
-        top: 27vw;
+        top: 42vw;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
     
@@ -983,13 +1010,23 @@ ul {
         max-height: 10vh;
         height: 10vh; 
         left: 16.5vw;
-        top: 75vw;
-
+        top: 90vw;
         max-width: 67vw; 
-    
+
         font-size: 1.7em;
         line-height: 10vw;
         text-align: center; 
+    }
+
+    /* logos */
+
+    .logos {
+        max-width: 40vw; 
+        box-sizing: border-box; 
+        position: absolute;
+        left: 5vw;
+        top: 2vh;
+        z-index: 100; 
     }
 
     /* Line Links */
