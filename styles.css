@@ -149,6 +149,32 @@ ul {
     color: #000000;
 }
 
+/* awards logos */
+
+.logos {
+    max-width: 11vw; 
+    box-sizing: border-box; 
+    position: absolute;
+    left: 14vw;
+    top: 65vh;
+    z-index: 100; 
+}
+
+.logos img {
+    max-width: 38%;
+    width: 37%;  
+    display: inline; 
+    padding-bottom: 5px; 
+}
+
+.logos .forum {
+    width: 60%; 
+    max-width: 61%;
+    padding-top: 5px; 
+    padding-bottom: 0px; 
+}
+
+
 /* links on opening screen */
 
 .text1 {
@@ -975,7 +1001,7 @@ ul {
         max-width: 70vw; 
         max-height: auto;  
         left: 15%;
-        top: 27vw;
+        top: 42vw;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
     
@@ -984,13 +1010,23 @@ ul {
         max-height: 10vh;
         height: 10vh; 
         left: 16.5vw;
-        top: 75vw;
-
+        top: 90vw;
         max-width: 67vw; 
-    
+
         font-size: 1.7em;
         line-height: 10vw;
         text-align: center; 
+    }
+
+    /* logos */
+
+    .logos {
+        max-width: 40vw; 
+        box-sizing: border-box; 
+        position: absolute;
+        left: 5vw;
+        top: 2vh;
+        z-index: 100; 
     }
 
     /* Line Links */
