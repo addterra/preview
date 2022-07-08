@@ -1,116 +1,206 @@
-
-// activate scrolltrigger 
+// register scroll trigger
 gsap.registerPlugin(ScrollTrigger); 
 
 
-// screen width and height variables for responsive animations  
+//variables 
+var vh = (window.innerHeight)/100;
+var vw = (window.innerWidth)/100;
+// size of circle menu 
+var tenvw = vw * 14; 
+var half = vw * 50; 
+var imageMove = vw * 50; 
+var full = vw * 100; 
+var full2 = vw * 100; 
+var fullh = vh * 140; 
+var circleH; 
+var circleW; 
+var imageMoveUp = 0; 
+var fullM = 0;
+// circle menu for phone screen 
 
-// screen width 
-var width = window.innerWidth;
-// negative 1/2 screen width 
-var half = (width / 2)* -1; 
-// positive 1/2 screen width 
-var half_pos = width/2;
-// negative half screen width minus caption width 
-var left_caption = ((width/2) - (width * 0.203)) * -1;
-// window height negative
-var height = (window.innerHeight) * -1;
-// window height double 
-var height2 = height * 2; 
+var x = window.matchMedia("(max-width: 580px)")
+
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+    circleH = vw * 60; 
+    circleW = vw * 45; 
+    imageMove = 0; 
+    imageMoveUp = 0; 
+    full = 0; 
+    half = 0; 
+    full2 = 0; 
+    fullh = 0; 
+    fullM = vh * 200;
+
+  } else {
+    circleH = vw * 14;
+    circleW = vw * 14; 
+  }
+}
+
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
+
+/// circle menu animation 
+// menu opens
+function menuIn() {
+  gsap.to("#circle_menu", {duration: 1.5, ease: 'back', x: -circleW, y: circleH});
+  gsap.to("#menuIcon", {duration: 0.5, ease: 'power 1', opacity: 0});
+};
+
+// menu closes
+function menuOut() {
+  gsap.to("#circle_menu", {duration: 2, ease: 'back', x: circleW, y: -circleH});
+  gsap.to("#menuIcon", {duration: 0.5, ease: 'power 1', opacity: 1});
+};
 
 
-// reload browser on window resize (in order to recalculate screen width 
-// and height for accurate positioning) 
+// scroll trigger for text and image movement in the first section 
 
-//window.onresize = function(){ location.reload(); }
-
-
-//gsap animating:
-
-//major timeline
 var tl = gsap.timeline( {
-    scrollTrigger: {  
-        trigger: ".please",
-        start: 'top top-=100',
-        end: 'bottom', 
-        scrub: true 
-    }
-});
-
-//static section timeline 
-var tl2 = gsap.timeline( {
   scrollTrigger: {  
-      trigger: ".section3",
-      start: 'top',
-      end: 'bottom', 
+      trigger: ".section2",
+      start: 'top top-=200',
+      end: 'bottom bottom', 
       scrub: true 
   }
 });
 
-
-// entire opening section scrolls up 
-tl.to(".opening_section", {duration: 1, ease: 'linear', y:height})
-
-
-// logo goes from full size into the corner
-tl.to(".logo", {duration: 1, ease: 'power 1', top: -10, left: 0, width: "7vw", padding: 25}, "<")
-//subtitles disappear 
-tl.to(".subtitle", {duration: 0.2, ease: 'power 1', opacity: 0}, "<")
-tl.to(".caption_boxO", {duration: 0.2, ease: 'power 1', opacity: 0}, "<")
-// entire first section scrolls into view 
-tl.to(".section1", {duration: 1, ease: 'linear', y:height}, "<")
-
-// first image & caption move from 50% of screen width to full screen, moving left 
-tl.to(".image1", {duration: 1, ease: 'power 1', x:half, delay: 0.5})
-tl.to(".caption_box", {duration: 1, ease: 'power 1', x:half}, "<")
-tl.to(".text1", {duration: 1, ease: 'power 1', opacity: 1}, "<")
-
-// entire first section scrolls up 
-tl.to(".section1", {duration: 2, ease: 'none', y:height2})
-
-// entire second section scrolls into view 
-tl.to(".section2", {duration: 2, ease: 'none', y:height}, "<")
-tl.to("#ham1", {duration: 0.5, ease: 'none', opacity: 1})
-tl.to("#ham", {duration: 0.5, ease: 'none', opacity: 0}, "<")
-
-// second image & caption (& clip path) move from 50% of screen width to full screen, moving right 
-tl.to(".image2", {duration: 1, ease: 'power 1', x:half_pos,delay: 0.5 })
-tl.to(".caption_box2", {duration: 1, ease: 'power 1', x:left_caption}, "<")
-tl.to(".clip_box", {duration: 1, ease: 'power 1', clipPath: 'inset(0% 0% 0% 0%)'}, "<")
-tl.to(".text2", {duration: 1, ease: 'power 1', opacity: 1}, "<")
-
-// entire second section scrolls up 
-tl.to(".section2", {duration: 2, ease: 'linear', y:height2})
-tl.to("#ham2", {duration: 2, ease: 'linear', y:-height}, "<")
-tl.to("#ham1", {duration: 2, ease: 'linear', y:-height}, "<") /// maybe take this out 
-tl.to("#ham1", {duration: 0.5, ease: 'none', opacity: 0}, "<")
-tl.to("#ham", {duration: 0.5, ease: 'none', opacity: 1, delay: 1}, "<")
-
-//entire third section scrolls into view 
-tl.to(".section3", {duration: 2, ease: 'linear', y:height}, ">-1.5");
-
-// third image & caption move from 50% of screen width to full screen, moving left 
-tl.to(".image3", {duration: 1, ease: 'power 1', x:half, delay: 0.5})
-tl.to(".caption_box3", {duration: 1, ease: 'power 1', x:half}, "<")
-tl.to(".text3", {duration: 1, ease: 'power 1', opacity: 1}, "<")
-
-// entire third section scrolls up 
-tl.to(".section3", {duration: 2, ease: 'none', y:height2}) 
-
-// static section scrolls up 
-tl.to(".static_section", {duration: 2, ease: 'none', y:height}, "<");
+tl.to(".movingText1", {duration: 0.5, ease: 'linear', x: -full}); 
+tl.to(".movingText2", {duration: 0.5, ease: 'linear', x: -half}, "<");
+tl.to(".movingText2", {duration: 0.5, ease: 'linear', x: -full2}, 1);
+tl.to(".movingText3", {duration: 0.5, ease: 'linear', x: -half}, "<");
+tl.to(".movingText3", {duration: 0.5, ease: 'linear', x: -half});
+tl.to("#firstImage", {duration: 1, ease: 'linear', x: -imageMove});
+//tl.to("#firstImage", {duration: 2, ease: 'linear', y: -imageMoveUp}, "<-1");
+tl.to(".subsection2", {duration: 2, ease: 'linear', y: -fullh});
+//tl.to(".orangeNumberSection", {duration: 2, ease: 'linear', y: -fullM}, "<");
+tl.to("#stickyLogo", {duration: 0.5, ease: 'linear', opacity: 1}, "<");
 
 
 
-//// animated menu 
+// advisor popups: functions to open and close 
 
-function menuIn() {
-    gsap.to("#circle_menu", {duration: 1.5, ease: 'back', x: -200, y: 200});
-    gsap.to("#ham", {duration: 0.5, ease: 'power 1', opacity: 0});
-  };
-  
-  
-function menuOut() {
-    gsap.to("#circle_menu", {duration: 2, ease: 'back', x: 200, y: -200});
-    gsap.to("#ham", {duration: 0.5, ease: 'power 1', opacity: 1});
+//TJ
+function popUp1() {
+    document.querySelector('#TJ').style.display = "block"; 
+}
+function popDown1() {
+    document.querySelector('#TJ').style.display = "none"; 
+}
+
+//Rick
+function popUp2() {
+  document.querySelector('#rick').style.display = "block"; 
+}
+function popDown2() {
+  document.querySelector('#rick').style.display = "none"; 
+}
+
+//Brian
+function popUpB() {
+  document.querySelector('#brian').style.display = "block"; 
+}
+function popDownB() {
+  document.querySelector('#brian').style.display = "none"; 
+}
+
+//Mark 
+function popUp6() {
+  document.querySelector('#mark').style.display = "block"; 
+}
+function popDown6() {
+  document.querySelector('#mark').style.display = "none"; 
+}
+
+//Jorhena 
+function popUp3() {
+  document.querySelector('#jor').style.display = "block"; 
+}
+function popDown3() {
+  document.querySelector('#jor').style.display = "none"; 
+}
+
+//Matt
+function popUp4() {
+  document.querySelector('#matt').style.display = "block"; 
+}
+function popDown4() {
+  document.querySelector('#matt').style.display = "none"; 
+}
+
+//Vita 
+function popUp5() {
+  document.querySelector('#vita').style.display = "block"; 
+}
+function popDown5() {
+  document.querySelector('#vita').style.display = "none"; 
+}
+
+
+//
+// text slider code 
+
+const _C = document.querySelector('.slider'), 
+      N = _C.children.length;
+
+let i = 0, x0 = null, locked = false, w;
+
+function unify(e) {	return e.changedTouches ? e.changedTouches[0] : e };
+
+function lock(e) {
+  x0 = unify(e).clientX;
+	_C.classList.toggle('smooth', !(locked = true))
 };
+
+function drag(e) {
+	e.preventDefault();
+	
+	if(locked) 		
+		_C.style.setProperty('--tx', `${Math.round(unify(e).clientX - x0)}px`)
+};
+
+function move(e) {
+  if(locked) {
+    let dx = unify(e).clientX - x0, s = Math.sign(dx), 
+				f = +(s*dx/w).toFixed(2);
+
+    if((i > 0 || s < 0) && (i < N - 1 || s > 0) && f > .2) {
+			_C.style.setProperty('--i', i -= s);
+			f = 1 - f
+      // circle nav code
+      document.querySelector(`.navCircle1`).style.backgroundColor = "white";
+      document.querySelector(`.navCircle2`).style.backgroundColor = "white";
+      document.querySelector(`.navCircle3`).style.backgroundColor = "white";
+      document.querySelector(`.navCircle${i+1}`).style.backgroundColor = "rgba(0, 0, 0, 0.185)";
+
+		}
+		
+    _C.style.setProperty('--tx', '0px');
+		_C.style.setProperty('--f', f);
+    _C.classList.toggle('smooth', !(locked = false));
+    x0 = null
+
+  }
+};
+
+function size() { w = window.innerWidth };
+
+size();
+_C.style.setProperty('--n', N);
+
+addEventListener('resize', size, false);
+
+_C.addEventListener('mousedown', lock, false);
+_C.addEventListener('touchstart', lock, false);
+
+_C.addEventListener('mousemove', drag, false);
+_C.addEventListener('touchmove', drag, false);
+
+_C.addEventListener('mouseup', move, false);
+_C.addEventListener('touchend', move, false);
+
+
+
+// function to change slider buttons accuratley
+
