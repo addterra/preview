@@ -11,7 +11,7 @@ var half = vw * 50;
 var imageMove = vw * 50; 
 var full = vw * 100; 
 var full2 = vw * 100; 
-var fullh = vh * 140; 
+var fullh = vh * 90;  /* used to be 140 */ 
 var circleH; 
 var circleW; 
 var imageMoveUp = 0; 
@@ -66,16 +66,16 @@ var tl = gsap.timeline( {
   }
 });
 
-tl.to(".movingText1", {duration: 0.5, ease: 'linear', x: -full}); 
-tl.to(".movingText2", {duration: 0.5, ease: 'linear', x: -half}, "<");
-tl.to(".movingText2", {duration: 0.5, ease: 'linear', x: -full2}, 1);
-tl.to(".movingText3", {duration: 0.5, ease: 'linear', x: -half}, "<");
-tl.to(".movingText3", {duration: 0.5, ease: 'linear', x: -half});
-tl.to("#firstImage", {duration: 1, ease: 'linear', x: -imageMove});
+tl.to(".movingText1", {duration: 1, ease: 'linear', x: -full}); 
+tl.to(".movingText2", {duration: 1, ease: 'linear', x: -half}, "<");
+tl.to(".movingText2", {duration: 1, ease: 'linear', x: -full2}, 2);
+tl.to(".movingText3", {duration: 1, ease: 'linear', x: -half}, "<");
+tl.to(".movingText3", {duration: 1, ease: 'linear', x: -half});
+tl.to("#firstImage", {duration: 2, ease: 'linear', x: -imageMove});
 //tl.to("#firstImage", {duration: 2, ease: 'linear', y: -imageMoveUp}, "<-1");
-tl.to(".subsection2", {duration: 2, ease: 'linear', y: -fullh});
+tl.to(".subsection2", {duration: 4, ease: 'linear', y: -fullh});
 //tl.to(".orangeNumberSection", {duration: 2, ease: 'linear', y: -fullM}, "<");
-tl.to("#stickyLogo", {duration: 0.5, ease: 'linear', opacity: 1}, "<");
+tl.to("#stickyLogo", {duration: 1, ease: 'linear', opacity: 1}, "<");
 
 
 
