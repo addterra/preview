@@ -1,4 +1,4 @@
 preview files at this link: 
 
-https://addterra.github.io/preview/file_preview.html 
+https://addterra.github.io/preview/file_view.html 
 
