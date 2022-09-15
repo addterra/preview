@@ -12,6 +12,8 @@ body {
     background-color: #0d1428; 
     margin: 0; 
     padding: 0; 
+    max-width: 100vw; 
+    overflow-x: hidden;
 }
 
 /* Header for all pages */
@@ -21,7 +23,8 @@ header {
     width: 100%; 
     background: rgb(13,20,40);
     background: linear-gradient(180deg, rgba(13,20,40,1) 0%, rgba(13,20,40,1) 30%, rgba(13,20,40,0.9280754538143382) 41%, rgba(13,20,40,0.8524452017134979) 51%, rgba(13,20,40,0.6647701316854867) 65%, rgba(13,20,40,0.4686917003129377) 73%, rgba(13,20,40,0) 95%);
-    position: fixed; 
+    position: fixed;
+    z-index: 5;  
     top: 0; 
     left: 0; 
     display: grid; 
@@ -29,8 +32,8 @@ header {
 }
 
 .logo {
-    max-width: 6.5vmax; 
-    padding-top: 4vh; 
+    max-width: 6vmax; 
+    padding-top: 5vh; 
     padding-left: 6vh; 
 }
 
@@ -49,7 +52,7 @@ header {
     padding-left: 3vw;
     font-size: 1.7vw;  
     font-family: 'Quicksand', sans-serif; 
-    font-weight: 400; 
+    font-weight: 300; 
     text-align: right; 
 }
 
@@ -73,16 +76,102 @@ header {
     cursor: pointer; 
 }
 
+/* Section 1 Opening Image & Text */
 
 .section1 {
     min-height: 100vh;
     height: 100vh; 
+    padding: 0px; 
     background-image: url("images/Main\ Banner\ Image\ Blue.png");
     background-size: cover; 
     background-color: #131b31;
+    position: relative;
+    z-index: 0; 
 }
 
+.gradient {
+    position: relative; 
+    width: 100%; 
+    height: 100%; 
+    background: rgb(13,20,40);
+    background: 
+    linear-gradient(360deg, rgba(13,20,40,1) 0%, rgba(13, 20, 40, 0.79) 20%, rgba(13, 20, 40, 0.653) 31%, rgba(13, 20, 40, 0.575) 41%, rgba(13, 20, 40, 0) 73%, rgba(13,20,40,0) 95%);
+}
+
+.mission_statement {
+    color: white; 
+    position: absolute;
+    bottom: 10vh;  
+    left: 5vw; 
+    text-transform: uppercase; 
+    font-family: 'Quicksand', sans-serif; 
+    font-weight: 300; 
+    font-size: 5vw; 
+    margin-bottom: 0; 
+}
+
+/* Section 2 Rotating Logo */
 .section2 {
     height: 100vh; 
     min-height: 100vh; 
+    padding-top: 8vh; 
+    max-width: 100vw; 
 }
+
+.title_header {
+    width: 100%; 
+    max-width: 100%; 
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+}
+
+.border {
+    grid-column: 3/6; 
+    width: 100%; 
+    border-bottom: 2px solid white; 
+}
+
+.title {
+    text-align: left bottom;  
+    color: white; 
+    font-family: 'Quicksand', sans-serif; 
+    font-weight: 300; 
+    font-size: 4vw; 
+    margin-bottom: 1vh; 
+    padding-left: 1vw; 
+}
+
+.logo_gif {
+    display: block; 
+    max-width: 70vw; 
+    width: 70vw; 
+    margin: auto; 
+    padding-right: 5.5vw; 
+    margin-top: -10vh;  
+}
+
+.logo_gif:hover {
+    cursor: pointer; 
+}
+
+/* Section 3 Services */
+.section3 {
+    height: 100vh; 
+    min-height: 100vh; 
+    padding-top: 8vh; 
+}
+
+/* Section 4 Bespoke */
+.section4 {
+    height: 100vh; 
+    min-height: 100vh;
+    padding-top: 8vh;  
+}
+
+/* Section 5 Contact */
+.section5 {
+    height: 100vh; 
+    min-height: 100vh; 
+    padding-top: 8vh; 
+}
+
