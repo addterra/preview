@@ -234,6 +234,21 @@ p {
     padding-right: 1vw;  
 }
 
+.services_grid {
+    width: 70vw;
+    margin: auto; 
+    margin-top: 10vh; 
+    height: 70%; 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+}
+
+.service {
+    width: 100%;
+    height: 100%; 
+}
+
 /* Section 4 Bespoke */
 .section4 {
     height: 100vh; 
