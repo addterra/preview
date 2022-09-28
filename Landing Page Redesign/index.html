@@ -17,8 +17,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"  defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" defer></script>
     <script src="script.js" defer></script>
-    <!-- lazy load for faster page speeds -->
-    <script src="lazysizes.min.js" async=""></script>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link href="styles.css" rel="stylesheet">  
 </head>
@@ -38,31 +36,21 @@
     </nav>
 
     <!-- hamburger icon -->
-    <img src="images/menu1.png" id="menuIcon" onclick="menuIn()" alt="Hamburger Icon"> 
-    <a href="#top"> 
-        <picture >
-            <source id="a1" srcset="images/PNG/logo.png" type="image/png">
-            <img id="stickyLogo" class="lazyload" load="lazy" src="images/logo.webpp" alt="IN 4.0S Logo" onerror="this.onerror=null;document.getElementById('a1').srcset=this.src;">
-        </picture>
-    </a>
+    <img src="images/menu1.png" load="lazy" id="menuIcon" onclick="menuIn()" alt="Hamburger Icon"> 
+    <a href="#top"> <img id="stickyLogo" load="lazy" src="images/logo.webp" alt="IN 4.0S Logo"> </a>
 
 
     <!-- Opening Screen Section -->
     
     <section class="section1" id="top"> 
         
-        <!-- Logo webp and backup png image --> 
-        <picture >
-            <source id="a2" srcset="images/PNG/logo.png" type="image/png">
-            <img id="logo" class="lazyload" load="lazy" src="images/logo.webp" alt="IN 4.0S Logo" onerror="this.onerror=null;document.getElementById('a2').srcset=this.src;">
-        </picture>
-
+        <img id="logo" load="lazy" src="images/logo.webp" alt="IN 4.0S Logo">
         <h2 id="subtitle"> The Future Beyond Comprehension </h2>
 
         <div class="logos"> 
-
-            <img class="forum" src="images/forum logo.png" alt="World Economic Forum Logo">
-            <img src="images/forbes logo.jpg" alt="Forbes Technology Council 2022 Member Logo">
+         
+            <img class="forum" load="lazy" src="/images/forum logo.png" alt="World Economic Forum Logo">
+            <img src="/images/forbes logo.jpg"  load="lazy" alt="Forbes Technology Council 2022 Member Logo">
             
         </div>
  
@@ -110,10 +98,7 @@
         <div class="leftBorder"> </div>
         <div class="subsection2">
             <div class="left_text">
-                <picture>
-                    <source id="a3" srcset="images/PNG/logo.png" type="image/png">
-                    <img id="logo2" class="lazyload" load="lazy" src="images/logo.webp" alt="IN 4.0S Logo" onerror="this.onerror=null;document.getElementById('a3').srcset=this.src;">
-                </picture>
+                <img id="logo2" load="lazy" src="images/logo.webp" alt="IN 4.0S Logo">
                 <div id="line2"></div>
                 <div class="slider">
                     <p class="movingText1"> 
@@ -141,11 +126,7 @@
                 </div>
             </div>
 
-            <picture >
-                <source id="a4" srcset="images/PNG/industry.png" type="image/png">
-                <img id="firstImage" src="images/industry.webp" alt="Additive manufacturing, image of factory automation at IN4.0S" onerror="this.onerror=null;document.getElementById('a4').srcset=this.src;">
-            </picture>
-            
+            <img id="firstImage" src="images/industry.webp" alt="Additive manufacturing, image of factory automation at IN4.0S">
         </div>
     </section>
 
@@ -161,13 +142,7 @@
                 <div class="awardText" id="margin"> 
                     <h2> <a class="titleLink" href="https://www.weforum.org/organizations/in4-os-us" target="_blank"> WORLD ECONOMIC FORUM </a> </h2>
                     <h3> NEW CHAMPIONS COMMUNITY 2020 & 2021 </h3> 
-
-                    <picture >
-                        <source id="a5" srcset="images/PNG/world-ecomonic-forum.png" type="image/png">
-                        <img class="champion_image" class="lazyload" load="lazy" src="images/world-ecomonic-forum.webp" alt="World Economic Forum Logo" onerror="this.onerror=null;document.getElementById('a5').srcset=this.src;">
-                    </picture>
-                    <!-- <img class="champion_image" src="images/world-ecomonic-forum.webp" alt="World Economic Forum Logo"> --> 
-
+                    <img class="champion_image" load="lazy" src="images/world-ecomonic-forum.webp" alt="World Economic Forum Logo">
                     <p> New Champions are mindful of their impact on society and aspire to 
                         participate in building a better future. We are a part of the new 
                         generation of dynamic high-growth companies that are championing new 
@@ -190,13 +165,7 @@
                     <h3> INDUSTRY 4.0 </h3>
                 </div> 
                     <p class="subheading" id="subheading2"> AUTONOMOUS MANUFACTURING </p>
-                
-                <picture>
-                    <source id="a6" srcset="images/PNG/section%202%20image.png" type="image/png">
-                    <img id="image2" class="lazyload" load="lazy" src="images/section 2 image.webp" alt="Additive Manufacturing: 3D Printing Machines in a Smart Factory" onerror="this.onerror=null;document.getElementById('a6').srcset=this.src;">
-                </picture>
-
-                <!-- <img class="image" id="image2" src="images/section 2 image.webp"  alt="Additive Manufacturing: 3D Printing Machines in a Smart Factory"> --> 
+                <img class="image" load="lazy" id="image2" src="images/section 2 image.webp"  alt="Additive Manufacturing: 3D Printing Machines in a Smart Factory">
                 
                 <div id="mobileLines2"> 
     
@@ -270,11 +239,7 @@
 
             <p class="subheading" id="subheading3"> CONNECTED. <br>
             SECURE. <br> AUTONOMOUS. </p>
-
-            <picture>
-                <source id="a7" srcset="images/PNG/section%203%20image%20small.png" type="image/png">
-                <img class="image lazyload" load="lazy" id="image3" src="images/section 3 image small.webp" alt="Infrastructure 4.0: Building Manufacturing Ecosystems" onerror="this.onerror=null;document.getElementById('a7').srcset=this.src;">
-            </picture>
+            <img class="image" id="image3" load="lazy" src="images/section 3 image small.webp" alt="Infrastructure 4.0: Building Manufacturing Ecosystems">
             
             <div id="mobileLines3" class="lines1">
                 <p> Electric Vehicles </p>
@@ -299,14 +264,7 @@
                 <h3> ADDTERRA </h3>
             </div> 
             <p class="subheading" id="subheading4"> BUILDING  THE ADDITIVE  MANUFACTURING ECOSYSTEM </p>
-
-            <picture>
-                <source id="a8" srcset="images/PNG/section%204%20image%20small.png" type="image/png">
-                <img class="image lazyload" load="lazy" id="image4" src="images/section 4 image small.webp" alt="Addterra is building the additive manufacturing ecosystem" onerror="this.onerror=null;document.getElementById('a8').srcset=this.src;">
-            </picture>
-
-            <!-- <img class="image" id="image4" src="images/section 4 image small.webp" alt="Addterra is building the additive manufacturing ecosystem"> --> 
-
+            <img class="image" load="lazy" id="image4" src="images/section 4 image small.webp" alt="Addterra is building the additive manufacturing ecosystem">
         </div>
     </div>
 
@@ -318,10 +276,7 @@
         </div> 
         <div class="advisors">
             <div class="box" id="box1"  onclick="popUp1()">
-                <picture>
-                    <source id="a9" srcset="images/PNG/white-square-BW.png" type="image/png">
-                    <img class="lazyload" load="lazy" src="images/white square BW.webp" alt="Image of Vice Admiral TJ White" onerror="this.onerror=null;document.getElementById('a9').srcset=this.src;">
-                </picture>
+                <img src="images/white square BW.webp" load="lazy" alt="Image of Vice Admiral TJ White">
                 <div class="names">
                 <p> VADM TJ White </p>
                 </div>
@@ -329,65 +284,42 @@
             
 
             <div class="box" id="box2" onclick="popUp6()">
-                <picture>
-                    <source id="b1" srcset="images/PNG/mark-square-BW.png" type="image/png">
-                    <img class="lazyload" load="lazy" src="images/Mark square BW.webp" alt="Image of Mark" onerror="this.onerror=null;document.getElementById('b1').srcset=this.src;">
-                </picture>
+                <img src="images/Mark square BW.webp" load="lazy" alt="Image of Mark">
                 <div class="names">
                 <p> Mark Bellamah</p>
                 </div>
             </div> 
 
             <div class="box" id="box3" onclick="popUpB()">
-                <picture>
-                    <source id="b2" srcset="images/PNG/brian-square-BW.png" type="image/png">
-                    <img class="lazyload" src="images/brian square BW.webp" alt="Image of Brian Curtin" onerror="this.onerror=null;document.getElementById('b2').srcset=this.src;">
-                </picture>
-                <!-- <img src="images/brian square BW.webp" alt="Image of Brian Curtin"> --> 
+                <img src="images/brian square BW.webp" load="lazy" alt="Image of Brian Curtin">
                 <div class="names">
                 <p> Brian Curtin </p>
                 </div>
             </div> 
 
             <div class="box" id="box4" onclick="popUp2()">
-                <picture>
-                    <source id="b3" srcset="images/PNG/geddes-square-BW.png" type="image/png">
-                    <img class="lazyload" load="lazy" src="images/geddes square BW.webp" alt="Image of Dr. Rick Geddes" onerror="this.onerror=null;document.getElementById('b3').srcset=this.src;">
-                </picture>
-                <!-- <img src="images/geddes square BW.webp" alt="Image of Dr. Rick Geddes"> --> 
+                <img src="images/geddes square BW.webp" load="lazy" alt="Image of Dr. Rick Geddes">
                 <div class="names">
                 <p> Dr. Rick Geddes </p>
                 </div>
             </div> 
 
             <div class="box" id="box5" onclick="popUp3()">
-                <picture>
-                    <source id="b4" srcset="images/PNG/jorhena-square-BW.png" type="image/png">
-                    <img class="lazyload" load="lazy" src="images/jorhena square BW.webp" alt="Image of Jorhena Thomas" onerror="this.onerror=null;document.getElementById('b4').srcset=this.src;">
-                </picture>
-                <!-- <img src="images/jorhena square BW.webp" alt="Image of Jorhena Thomas"> --> 
+                <img src="images/jorhena square BW.webp" load="lazy" alt="Image of Jorhena Thomas">
                 <div class="names">
                 <p> Jorhena Thomas </p>
                 </div>
             </div> 
 
             <div class="box" id="box5" onclick="popUp4()">
-                <picture>
-                    <source id="b5" srcset="images/PNG/matt-square-BW.png" type="image/png">
-                    <img class="lazyload" load="lazy" src="images/matt square BW.webp" alt="Image of Matt Ashburn" onerror="this.onerror=null;document.getElementById('b5').srcset=this.src;">
-                </picture>
-                <!-- <img src="images/matt square BW.webp" alt="Image of Matt Ashburn"> --> 
+                <img src="images/matt square BW.webp" load="lazy" alt="Image of Matt Ashburn">
                 <div class="names">
                 <p> Matt Ashburn </p>
                 </div>
             </div> 
 
             <div class="box" id="box5" onclick="popUp5()">
-                <picture>
-                    <source id="b6" srcset="images/PNG/vita-square-BW.png" type="image/png">
-                    <img class="lazyload" load="lazy" src="images/vita square BW.webp" alt="Image of Vita Bruno" onerror="this.onerror=null;document.getElementById('b6').srcset=this.src;">
-                </picture>
-                <!-- <img src="images/vita square BW.webp" alt="Image of Vita Bruno"> --> 
+                <img src="images/vita square BW.webp" load="lazy" alt="Image of Vita Bruno">
                 <div class="names">
                 <p> Vita Bruno </p>
                 </div>
@@ -401,11 +333,7 @@
         <div class="overlayContent">
             <p class="exit" onclick="popDown1()"> x </p>
             <div class="box" id="box1">
-                <picture>
-                    <source id="a9" srcset="images/PNG/white-square-BW.png" type="image/png">
-                    <img class="lazyload" load="lazy" src="images/white square BW.webp" alt="Image of Vice Admiral TJ White" onerror="this.onerror=null;document.getElementById('a9').srcset=this.src;">
-                </picture>
-                <!-- <img src="images/white square BW.webp" alt="Image of Vice Admiral TJ White"> --> 
+                <img src="images/white square BW.webp" load="lazy" alt="Image of Vice Admiral TJ White">
                 <div class="names">
                 <p> Vice Admiral TJ White </p>
                 </div>
@@ -444,11 +372,7 @@
         <div class="overlayContent">
             <p class="exit" onclick="popDownB()"> x </p>
             <div class="box" id="box2">
-                <picture>
-                    <source id="b2" srcset="images/PNG/brian-square-BW.png" type="image/png">
-                    <img class="lazyload" load="lazy" src="images/brian square BW.webp" alt="Image of Brian Curtin" onerror="this.onerror=null;document.getElementById('b2').srcset=this.src;">
-                </picture>
-                <!-- <img src="images/brian square BW.webp" alt="Image of Brian Curtin"> --> 
+                <img src="images/brian square BW.webp" load="lazy" alt="Image of Brian Curtin">
                 <div class="names">
                 <p> Brian Curtin </p>
                 </div>
@@ -481,11 +405,7 @@
         <div class="overlayContent">
             <p class="exit" onclick="popDown2()"> x </p>
             <div class="box" id="box2">
-                <picture>
-                    <source id="b3" srcset="images/PNG/geddes-square-BW.png" type="image/png">
-                    <img class="lazyload" load="lazy" src="images/geddes square BW.webp" alt="Image of Dr. Rick Geddes" onerror="this.onerror=null;document.getElementById('b3').srcset=this.src;">
-                </picture>
-                <!-- <img src="images/geddes square BW.webp" alt="Image of Dr. Rick Geddes"> --> 
+                <img src="images/geddes square BW.webp" load="lazy" alt="Image of Dr. Rick Geddes">
                 <div class="names">
                 <p> Dr. Rick Geddes </p>
                 </div>
@@ -526,11 +446,7 @@
         <div class="overlayContent">
             <p class="exit" onclick="popDown6()"> x </p>
             <div class="box" id="box2">
-                <picture>
-                    <source id="b1" srcset="images/PNG/mark-square-BW.png" type="image/png">
-                    <img class="lazyload" load="lazy" src="images/Mark square BW.webp" alt="Image of Mark Bellamah" onerror="this.onerror=null;document.getElementById('b1').srcset=this.src;">
-                </picture>
-                <!-- <img src="images/Mark square BW.webp" alt="Image of Mark Bellamah"> --> 
+                <img src="images/Mark square BW.webp" load="lazy" alt="Image of Dr. Rick Geddes">
                 <div class="names">
                 <p> Mark Bellamah </p>
                 </div>
@@ -556,11 +472,7 @@
         <div class="overlayContent">
             <p class="exit" onclick="popDown3()"> x </p>
             <div class="box" id="box3">
-                <picture>
-                    <source id="b4" srcset="images/PNG/jorhena-square-BW.png" type="image/png">
-                    <img class="lazyload" load="lazy" src="images/jorhena square BW.webp" alt="Image of Jorhena Thomas" onerror="this.onerror=null;document.getElementById('b4').srcset=this.src;">
-                </picture>
-                <!-- <img src="images/jorhena square BW.webp" alt="Image of Jorhena Thomas"> --> 
+                <img src="images/jorhena square BW.webp" load="lazy" alt="Image of Jorhena Thomas">
                 <div class="names">
                 <p> Jorhena Thomas </p>
                 </div>
@@ -605,11 +517,7 @@
         <div class="overlayContent">
             <p class="exit" onclick="popDown4()"> x </p>
             <div class="box" id="box4">
-                <picture>
-                    <source id="b5" srcset="images/PNG/matt-square-BW.png" type="image/png">
-                    <img class="lazyload" load="lazy" src="images/matt square BW.webp" alt="Image of Matt Ashburn" onerror="this.onerror=null;document.getElementById('b5').srcset=this.src;">
-                </picture>
-                <!-- <img src="images/matt square BW.webp" alt="Image of Matt Ashburn"> --> 
+                <img src="images/matt square BW.webp" load="lazy" alt="Image of Matt Ashburn">
                 <div class="names">
                 <p> Matt Ashburn </p>
                 </div>
@@ -645,11 +553,7 @@
         <div class="overlayContent">
             <p class="exit" onclick="popDown5()"> x </p>
             <div class="box" id="box5">
-                <picture>
-                    <source id="b6" srcset="images/PNG/vita-square-BW.png" type="image/png">
-                    <img class="lazyload" load="lazy" src="images/vita square BW.webp" alt="Image of Vita Bruno" onerror="this.onerror=null;document.getElementById('b6').srcset=this.src;">
-                </picture>
-                <!-- <img src="images/vita square BW.webp" alt="Image of Vita Bruno"> --> 
+                <img src="images/vita square BW.webp" load="lazy" alt="Image of Vita Bruno">
                 <div class="names">
                 <p> Vita Bruno </p>
                 </div>
@@ -689,11 +593,7 @@
     <section class="section6">
 
         <div class="contact">
-            <picture>
-                <source id="b7" srcset="images/PNG/logo-small.png" type="image/png">
-                <img class="contactLogo lazyload" load="lazy" src="images/logo small.webp" alt="IN 4.0S Logo" onerror="this.onerror=null;document.getElementById('b7').srcset=this.src;">
-            </picture>
-            <!-- <img class="contactLogo" src="images/logo small.webp" alt="IN 4.0S Logo"> --> 
+            <img class="contactLogo" load="lazy" src="images/logo-small.webp" alt="IN 4.0S Logo">
             <a href = "mailto:info@in40s.us" target="_blank">
                 <div class="contactButton" id="contact">
                     <h2> PARTNER WITH <span class="orange">IN 4.0S</span> </h2>
@@ -710,11 +610,7 @@
         <div class="footer">
             <p class="locations"> Locations: VA / DC &nbspCA &nbspMA &nbspNH </p> 
             <a class="linked" href="https://www.linkedin.com/company/in40s/" target="_blank"> 
-                <picture>
-                    <source id="b8" srcset="images/PNG/linkedin.png" type="image/png">
-                    <img class="linkedin lazyload" load="lazy" src="images/linkedin.webp" alt="IN 4.0S Linkedin Profile" onerror="this.onerror=null;document.getElementById('b8').srcset=this.src;">
-                </picture>
-                <!-- <img class="linkedin" src="images/linkedin.webp" alt="IN 4.0S Linkedin Profile"> -->  
+                <img class="linkedin" load="lazy" src="images/linkedin.webp" alt="IN 4.0S Linkedin Profile"> 
             </a> 
             <div class="footNav"> 
                 <p class="footLine"> | &nbsp </p>
