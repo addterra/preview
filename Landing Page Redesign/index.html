@@ -37,20 +37,30 @@
 
     <!-- hamburger icon -->
     <img src="images/menu1.png" id="menuIcon" onclick="menuIn()" alt="Hamburger Icon"> 
-    <a href="#top"> <img id="stickyLogo" src="images/logo.webp" alt="IN 4.0S Logo"> </a>
+    <a href="#top"> 
+        <picture >
+            <source id="a1" srcset="images/PNG/logo.png" type="image/png">
+            <img id="stickyLogo" src="images/logo.webp" alt="IN 4.0S Logo" onerror="this.onerror=null;document.getElementById('a1').srcset=this.src;">
+        </picture>
+    </a>
 
 
     <!-- Opening Screen Section -->
     
     <section class="section1" id="top"> 
         
-        <img id="logo" src="images/logo.webp" alt="IN 4.0S Logo">
+        <!-- Logo webp and backup png image --> 
+        <picture >
+            <source id="a2" srcset="images/PNG/logo.png" type="image/png">
+            <img id="logo" src="images/logo.webp" alt="IN 4.0S Logo" onerror="this.onerror=null;document.getElementById('a2').srcset=this.src;">
+        </picture>
+
         <h2 id="subtitle"> The Future Beyond Comprehension </h2>
 
         <div class="logos"> 
-         
-            <img class="forum" src="/images/forum logo.png" alt="World Economic Forum Logo">
-            <img src="/images/forbes logo.jpg" alt="Forbes Technology Council 2022 Member Logo">
+
+            <img class="forum" src="images/forum logo.png" alt="World Economic Forum Logo">
+            <img src="images/forbes logo.jpg" alt="Forbes Technology Council 2022 Member Logo">
             
         </div>
  
@@ -98,7 +108,10 @@
         <div class="leftBorder"> </div>
         <div class="subsection2">
             <div class="left_text">
-                <img id="logo2" src="images/logo.webp" alt="IN 4.0S Logo">
+                <picture>
+                    <source id="a3" srcset="images/PNG/logo.png" type="image/png">
+                    <img id="logo2" src="images/logo.webp" alt="IN 4.0S Logo" onerror="this.onerror=null;document.getElementById('a3').srcset=this.src;">
+                </picture>
                 <div id="line2"></div>
                 <div class="slider">
                     <p class="movingText1"> 
@@ -126,7 +139,11 @@
                 </div>
             </div>
 
-            <img id="firstImage" src="images/industry.webp" alt="Additive manufacturing, image of factory automation at IN4.0S">
+            <picture >
+                <source id="a4" srcset="images/PNG/industry.png" type="image/png">
+                <img id="firstImage" src="images/industry.webp" alt="Additive manufacturing, image of factory automation at IN4.0S" onerror="this.onerror=null;document.getElementById('a4').srcset=this.src;">
+            </picture>
+            
         </div>
     </section>
 
@@ -142,7 +159,13 @@
                 <div class="awardText" id="margin"> 
                     <h2> <a class="titleLink" href="https://www.weforum.org/organizations/in4-os-us" target="_blank"> WORLD ECONOMIC FORUM </a> </h2>
                     <h3> NEW CHAMPIONS COMMUNITY 2020 & 2021 </h3> 
-                    <img class="champion_image" src="images/world-ecomonic-forum.webp" alt="World Economic Forum Logo">
+
+                    <picture >
+                        <source id="a5" srcset="images/PNG/world-ecomonic-forum.png" type="image/png">
+                        <img class="champion_image" src="images/world-ecomonic-forum.webp" alt="World Economic Forum Logo" onerror="this.onerror=null;document.getElementById('a5').srcset=this.src;">
+                    </picture>
+                    <!-- <img class="champion_image" src="images/world-ecomonic-forum.webp" alt="World Economic Forum Logo"> --> 
+
                     <p> New Champions are mindful of their impact on society and aspire to 
                         participate in building a better future. We are a part of the new 
                         generation of dynamic high-growth companies that are championing new 
@@ -165,7 +188,13 @@
                     <h3> INDUSTRY 4.0 </h3>
                 </div> 
                     <p class="subheading" id="subheading2"> AUTONOMOUS MANUFACTURING </p>
-                <img class="image" id="image2" src="images/section 2 image.webp"  alt="Additive Manufacturing: 3D Printing Machines in a Smart Factory">
+                
+                <picture>
+                    <source id="a6" srcset="images/PNG/section%202%20image.png" type="image/png">
+                    <img id="image2" src="images/section 2 image.webp" alt="Additive Manufacturing: 3D Printing Machines in a Smart Factory" onerror="this.onerror=null;document.getElementById('a6').srcset=this.src;">
+                </picture>
+
+                <!-- <img class="image" id="image2" src="images/section 2 image.webp"  alt="Additive Manufacturing: 3D Printing Machines in a Smart Factory"> --> 
                 
                 <div id="mobileLines2"> 
     
@@ -239,7 +268,11 @@
 
             <p class="subheading" id="subheading3"> CONNECTED. <br>
             SECURE. <br> AUTONOMOUS. </p>
-            <img class="image" id="image3" src="images/section 3 image small.webp" alt="Infrastructure 4.0: Building Manufacturing Ecosystems">
+
+            <picture>
+                <source id="a7" srcset="images/PNG/section%203%20image%20small.png" type="image/png">
+                <img class="image" id="image3" src="images/section 3 image small.webp" alt="Infrastructure 4.0: Building Manufacturing Ecosystems" onerror="this.onerror=null;document.getElementById('a7').srcset=this.src;">
+            </picture>
             
             <div id="mobileLines3" class="lines1">
                 <p> Electric Vehicles </p>
@@ -264,7 +297,14 @@
                 <h3> ADDTERRA </h3>
             </div> 
             <p class="subheading" id="subheading4"> BUILDING  THE ADDITIVE  MANUFACTURING ECOSYSTEM </p>
-            <img class="image" id="image4" src="images/section 4 image small.webp" alt="Addterra is building the additive manufacturing ecosystem">
+
+            <picture>
+                <source id="a8" srcset="images/PNG/section%204%20image%20small.png" type="image/png">
+                <img class="image" id="image4" src="images/section 4 image small.webp" alt="Addterra is building the additive manufacturing ecosystem" onerror="this.onerror=null;document.getElementById('a8').srcset=this.src;">
+            </picture>
+
+            <!-- <img class="image" id="image4" src="images/section 4 image small.webp" alt="Addterra is building the additive manufacturing ecosystem"> --> 
+
         </div>
     </div>
 
@@ -276,7 +316,10 @@
         </div> 
         <div class="advisors">
             <div class="box" id="box1"  onclick="popUp1()">
-                <img src="images/white square BW.webp" alt="Image of Vice Admiral TJ White">
+                <picture>
+                    <source id="a9" srcset="images/PNG/white-square-BW.png" type="image/png">
+                    <img src="images/white square BW.webp" alt="Image of Vice Admiral TJ White" onerror="this.onerror=null;document.getElementById('a9').srcset=this.src;">
+                </picture>
                 <div class="names">
                 <p> VADM TJ White </p>
                 </div>
@@ -284,42 +327,65 @@
             
 
             <div class="box" id="box2" onclick="popUp6()">
-                <img src="images/Mark square BW.webp" alt="Image of Mark">
+                <picture>
+                    <source id="b1" srcset="images/PNG/mark-square-BW.png" type="image/png">
+                    <img src="images/Mark square BW.webp" alt="Image of Mark" onerror="this.onerror=null;document.getElementById('b1').srcset=this.src;">
+                </picture>
                 <div class="names">
                 <p> Mark Bellamah</p>
                 </div>
             </div> 
 
             <div class="box" id="box3" onclick="popUpB()">
-                <img src="images/brian square BW.webp" alt="Image of Brian Curtin">
+                <picture>
+                    <source id="b2" srcset="images/PNG/brian-square-BW.png" type="image/png">
+                    <img src="images/brian square BW.webp" alt="Image of Brian Curtin" onerror="this.onerror=null;document.getElementById('b2').srcset=this.src;">
+                </picture>
+                <!-- <img src="images/brian square BW.webp" alt="Image of Brian Curtin"> --> 
                 <div class="names">
                 <p> Brian Curtin </p>
                 </div>
             </div> 
 
             <div class="box" id="box4" onclick="popUp2()">
-                <img src="images/geddes square BW.webp" alt="Image of Dr. Rick Geddes">
+                <picture>
+                    <source id="b3" srcset="images/PNG/geddes-square-BW.png" type="image/png">
+                    <img src="images/geddes square BW.webp" alt="Image of Dr. Rick Geddes" onerror="this.onerror=null;document.getElementById('b3').srcset=this.src;">
+                </picture>
+                <!-- <img src="images/geddes square BW.webp" alt="Image of Dr. Rick Geddes"> --> 
                 <div class="names">
                 <p> Dr. Rick Geddes </p>
                 </div>
             </div> 
 
             <div class="box" id="box5" onclick="popUp3()">
-                <img src="images/jorhena square BW.webp" alt="Image of Jorhena Thomas">
+                <picture>
+                    <source id="b4" srcset="images/PNG/jorhena-square-BW.png" type="image/png">
+                    <img src="images/jorhena square BW.webp" alt="Image of Jorhena Thomas" onerror="this.onerror=null;document.getElementById('b4').srcset=this.src;">
+                </picture>
+                <!-- <img src="images/jorhena square BW.webp" alt="Image of Jorhena Thomas"> --> 
                 <div class="names">
                 <p> Jorhena Thomas </p>
                 </div>
             </div> 
 
             <div class="box" id="box5" onclick="popUp4()">
-                <img src="images/matt square BW.webp" alt="Image of Matt Ashburn">
+                <picture>
+                    <source id="b5" srcset="images/PNG/matt-square-BW.png" type="image/png">
+                    <img src="images/matt square BW.webp" alt="Image of Matt Ashburn" onerror="this.onerror=null;document.getElementById('b5').srcset=this.src;">
+                </picture>
+                <!-- <img src="images/matt square BW.webp" alt="Image of Matt Ashburn"> --> 
                 <div class="names">
                 <p> Matt Ashburn </p>
                 </div>
             </div> 
 
             <div class="box" id="box5" onclick="popUp5()">
-                <img src="images/vita square BW.webp" alt="Image of Vita Bruno">
+                <picture>
+                    <source id="b6" srcset="images/PNG/vita-square-BW.png" type="image/png">
+                    <img src="images/vita square BW.webp" alt="Image of Vita Bruno" onerror="this.onerror=null;document.getElementById('b6').srcset=this.src;">
+                </picture>
+                <!-- <img src="images/vita square BW.webp" alt="Image of Vita Bruno"> --> 
                 <div class="names">
                 <p> Vita Bruno </p>
                 </div>
@@ -333,7 +399,11 @@
         <div class="overlayContent">
             <p class="exit" onclick="popDown1()"> x </p>
             <div class="box" id="box1">
-                <img src="images/white square BW.webp" alt="Image of Vice Admiral TJ White">
+                <picture>
+                    <source id="a9" srcset="images/PNG/white-square-BW.png" type="image/png">
+                    <img src="images/white square BW.webp" alt="Image of Vice Admiral TJ White" onerror="this.onerror=null;document.getElementById('a9').srcset=this.src;">
+                </picture>
+                <!-- <img src="images/white square BW.webp" alt="Image of Vice Admiral TJ White"> --> 
                 <div class="names">
                 <p> Vice Admiral TJ White </p>
                 </div>
@@ -372,7 +442,11 @@
         <div class="overlayContent">
             <p class="exit" onclick="popDownB()"> x </p>
             <div class="box" id="box2">
-                <img src="images/brian square BW.webp" alt="Image of Brian Curtin">
+                <picture>
+                    <source id="b2" srcset="images/PNG/brian-square-BW.png" type="image/png">
+                    <img src="images/brian square BW.webp" alt="Image of Brian Curtin" onerror="this.onerror=null;document.getElementById('b2').srcset=this.src;">
+                </picture>
+                <!-- <img src="images/brian square BW.webp" alt="Image of Brian Curtin"> --> 
                 <div class="names">
                 <p> Brian Curtin </p>
                 </div>
@@ -405,7 +479,11 @@
         <div class="overlayContent">
             <p class="exit" onclick="popDown2()"> x </p>
             <div class="box" id="box2">
-                <img src="images/geddes square BW.webp" alt="Image of Dr. Rick Geddes">
+                <picture>
+                    <source id="b3" srcset="images/PNG/geddes-square-BW.png" type="image/png">
+                    <img src="images/geddes square BW.webp" alt="Image of Dr. Rick Geddes" onerror="this.onerror=null;document.getElementById('b3').srcset=this.src;">
+                </picture>
+                <!-- <img src="images/geddes square BW.webp" alt="Image of Dr. Rick Geddes"> --> 
                 <div class="names">
                 <p> Dr. Rick Geddes </p>
                 </div>
@@ -446,7 +524,11 @@
         <div class="overlayContent">
             <p class="exit" onclick="popDown6()"> x </p>
             <div class="box" id="box2">
-                <img src="images/Mark square BW.webp" alt="Image of Dr. Rick Geddes">
+                <picture>
+                    <source id="b1" srcset="images/PNG/mark-square-BW.png" type="image/png">
+                    <img src="images/Mark square BW.webp" alt="Image of Mark Bellamah" onerror="this.onerror=null;document.getElementById('b1').srcset=this.src;">
+                </picture>
+                <!-- <img src="images/Mark square BW.webp" alt="Image of Mark Bellamah"> --> 
                 <div class="names">
                 <p> Mark Bellamah </p>
                 </div>
@@ -472,7 +554,11 @@
         <div class="overlayContent">
             <p class="exit" onclick="popDown3()"> x </p>
             <div class="box" id="box3">
-                <img src="images/jorhena square BW.webp" alt="Image of Jorhena Thomas">
+                <picture>
+                    <source id="b4" srcset="images/PNG/jorhena-square-BW.png" type="image/png">
+                    <img src="images/jorhena square BW.webp" alt="Image of Jorhena Thomas" onerror="this.onerror=null;document.getElementById('b4').srcset=this.src;">
+                </picture>
+                <!-- <img src="images/jorhena square BW.webp" alt="Image of Jorhena Thomas"> --> 
                 <div class="names">
                 <p> Jorhena Thomas </p>
                 </div>
@@ -517,7 +603,11 @@
         <div class="overlayContent">
             <p class="exit" onclick="popDown4()"> x </p>
             <div class="box" id="box4">
-                <img src="images/matt square BW.webp" alt="Image of Matt Ashburn">
+                <picture>
+                    <source id="b5" srcset="images/PNG/matt-square-BW.png" type="image/png">
+                    <img src="images/matt square BW.webp" alt="Image of Matt Ashburn" onerror="this.onerror=null;document.getElementById('b5').srcset=this.src;">
+                </picture>
+                <!-- <img src="images/matt square BW.webp" alt="Image of Matt Ashburn"> --> 
                 <div class="names">
                 <p> Matt Ashburn </p>
                 </div>
@@ -553,7 +643,11 @@
         <div class="overlayContent">
             <p class="exit" onclick="popDown5()"> x </p>
             <div class="box" id="box5">
-                <img src="images/vita square BW.webp" alt="Image of Vita Bruno">
+                <picture>
+                    <source id="b6" srcset="images/PNG/vita-square-BW.png" type="image/png">
+                    <img src="images/vita square BW.webp" alt="Image of Vita Bruno" onerror="this.onerror=null;document.getElementById('b6').srcset=this.src;">
+                </picture>
+                <!-- <img src="images/vita square BW.webp" alt="Image of Vita Bruno"> --> 
                 <div class="names">
                 <p> Vita Bruno </p>
                 </div>
@@ -593,7 +687,11 @@
     <section class="section6">
 
         <div class="contact">
-            <img class="contactLogo" src="images/logo small.webp" alt="IN 4.0S Logo">
+            <picture>
+                <source id="b7" srcset="images/PNG/logo-small.png" type="image/png">
+                <img class="contactLogo" src="images/logo small.webp" alt="IN 4.0S Logo" onerror="this.onerror=null;document.getElementById('b7').srcset=this.src;">
+            </picture>
+            <!-- <img class="contactLogo" src="images/logo small.webp" alt="IN 4.0S Logo"> --> 
             <a href = "mailto:info@in40s.us" target="_blank">
                 <div class="contactButton" id="contact">
                     <h2> PARTNER WITH <span class="orange">IN 4.0S</span> </h2>
@@ -610,7 +708,11 @@
         <div class="footer">
             <p class="locations"> Locations: VA / DC &nbspCA &nbspMA &nbspNH </p> 
             <a class="linked" href="https://www.linkedin.com/company/in40s/" target="_blank"> 
-                <img class="linkedin" src="images/linkedin.webp" alt="IN 4.0S Linkedin Profile"> 
+                <picture>
+                    <source id="b8" srcset="images/PNG/linkedin.png" type="image/png">
+                    <img class="linkedin" src="images/linkedin.webp" alt="IN 4.0S Linkedin Profile" onerror="this.onerror=null;document.getElementById('b8').srcset=this.src;">
+                </picture>
+                <!-- <img class="linkedin" src="images/linkedin.webp" alt="IN 4.0S Linkedin Profile"> -->  
             </a> 
             <div class="footNav"> 
                 <p class="footLine"> | &nbsp </p>
