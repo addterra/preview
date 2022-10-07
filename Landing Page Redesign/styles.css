@@ -1014,11 +1014,11 @@ ul {
     }
     
     .movingText1 {
-        width: 90%; 
+        width: 80%; 
         padding-top: 5vh;
-        padding-left: 5vw; 
+        padding-left: 7vw; 
         box-sizing: border-box;
-        font-size: 3vw; 
+        font-size: 2vw; 
         text-align: center; 
         font-family: 'Quicksand'; 
     }
@@ -1028,13 +1028,13 @@ ul {
         padding-top: 5vh;
         padding-left: 7vw; 
         box-sizing: border-box;
-        font-size: 3vw; 
+        font-size: 2vw; 
         text-align: center; 
         font-family: 'Quicksand'; 
     
         position: absolute; 
-        top: 40vh; 
-        left: 50vw; 
+        top: 38vh; 
+        left: 0vw; 
     
     }
     
@@ -1043,15 +1043,26 @@ ul {
         padding-top: 5vh;
         padding-left: 7vw; 
         box-sizing: border-box;
-        font-size: 3vw; 
+        font-size: 2vw; 
         text-align: center; 
         font-family: 'Quicksand'; 
     
         position: absolute; 
-        top: 55vh; 
-        left: 50vw; 
+        top: 54vh; 
+        left: 0vw; 
     }
     
+
+    /* Contact Section */
+    .section6 { 
+        height: 45vh;
+        position: relative; 
+        box-sizing: border-box;
+    }
+
+    .contact {
+        margin-top: 15vh; 
+    }
 
 }
 

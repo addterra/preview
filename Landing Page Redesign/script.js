@@ -37,6 +37,13 @@ function myFunction(x) {
   } else if (y.matches) {
     circleH = vw * 40; 
     circleW = vw * 35; 
+    full = 0; 
+    half = 0; 
+    full2 = 0; 
+    fullh = 0; 
+    imageMove = 0; 
+    imageMoveUp = 0;  
+     
     
   } else {
     circleH = vw * 14;
