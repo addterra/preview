@@ -937,9 +937,9 @@ ul {
 
     /* Hamburger Menu Icon */
     #menuIcon {
-        padding: 2vw; 
+        padding: 1.5vw; 
         margin: 0; 
-        width: 5vw; 
+        width: 4vw; 
         position: fixed; 
         top: 8vw;
         right: 4.5vw;  
@@ -1002,6 +1002,24 @@ ul {
 
     /* moving images section  */
 
+    .section2 {
+        height: 200vh; 
+    }
+
+    .subsection2 {
+        position: relative; 
+    }
+
+    .leftBorder {
+        margin-left: 13vw;
+        border-left: 1.8px solid black;
+        width: 5vw;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        bottom: 100vh;
+    }
+
     #firstImage { 
         display: inline; 
         width: auto;
@@ -1051,7 +1069,71 @@ ul {
         top: 54vh; 
         left: 0vw; 
     }
+
+
+    /* Orange number section */ 
+
+    .orangeNumberSection {
+        margin-top: -100vh; 
+        border-top: solid 2px black; 
+    }
     
+    /* Board of Advisors Section */
+    .section5 {
+        width: 100%;
+        min-height: 55vh;
+        box-sizing: border-box;
+        padding-left: 12.5vw;
+        padding-right: 12.5vw;
+        position: relative;
+    }
+
+    .names {
+        font-size: 1.5vw; 
+    }
+
+    .advisors {
+        grid-template-columns: 15vw 15vw 15vw;
+        grid-template-rows: 15vw 15vw 15vw;
+        grid-gap: 3vw;
+        width: 55vw;
+        left: 40vw;
+        top: 10vh;
+    }
+
+    /* Board of Advisors Popups */
+    .overlay .box {
+        width: 35vw;
+        max-width: 35vw;
+        height: 35vw;
+        position: absolute;
+        top: 5vh;
+        left: 5vh;
+    }
+
+    .exit {
+        font-size: 5vw; 
+        right: 4vw; 
+    }
+
+    .overlay .box .names {
+        font-size: 3vw;
+        padding: 1vw;
+        padding-left: 2vw; 
+    }
+
+    .overlayContent {
+        width: 80vw;
+        margin: auto;
+        background-color: rgb(255, 255, 255);
+        min-height: 60vh;
+        max-height: 90vh; 
+        margin-top: 5vh;
+        position: relative;
+        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 27%), 0 6px 20px 0 rgb(0 0 0 / 27%);
+        box-sizing: border-box;
+        border-radius: 1vw 1vw 1vw 1vw;
+    }
 
     /* Contact Section */
     .section6 { 
@@ -1062,6 +1144,42 @@ ul {
 
     .contact {
         margin-top: 15vh; 
+    }
+
+    .contactButton {
+        border: 1.6px solid black;
+        padding: 2vw;
+        padding-right: 4vw;
+        padding-left: 4vw;
+        width: 40vw;
+    }
+
+    .contactButton h2 {
+        font-size: 4vw;
+    }
+
+    .contactLogo {
+        width: 20vw;
+        margin-left: 40vw;
+    }
+
+    /* Footer */
+
+    .footer {
+        position: absolute;
+        box-sizing: border-box; 
+        width: 100vw;
+        bottom: 0;
+        left: 0;
+        height: 15vh;
+        background-color: rgb(255, 255, 255);
+        font-family: 'Quicksand', sans-serif;
+        text-align: center;
+        font-size: 3.3vw;
+        vertical-align: center;
+        padding-top: 3.5vh; 
+        padding-left: 17vw; 
+        padding-right: 17vw; 
     }
 
 }

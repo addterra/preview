@@ -16,10 +16,23 @@ var circleH;
 var circleW; 
 var imageMoveUp = 0; 
 var fullM = 0;
-// circle menu for phone screen 
 
+// var to control animation length (controls where it ends) 
+var bottom = 'bottom bottom';
+
+// variables for the lengths of each step of the animation
+var ani1 = "0"; 
+var ani2 = "<"; 
+var ani3 = "2"; 
+var ani4 = "<"; 
+var ani5 = ">"; 
+var ani6 = ">"; 
+var ani7 = ">";
+var ani8 = "<";  
+
+
+// variables to select mobile or ipad view 
 var x = window.matchMedia("(max-width: 580px)")
-
 var y = window.matchMedia("(max-width: 1024px)")
 
 function myFunction(x) {
@@ -42,8 +55,20 @@ function myFunction(x) {
     full2 = 0; 
     fullh = 0; 
     imageMove = 0; 
-    imageMoveUp = 0;  
+    imageMoveUp = 0; 
+    
+    //controls how long the animation sequence lasts 
+    bottom = 'top top'
      
+    // resets the animation steps to all happen at once (basically deleting the animation)
+    ani1 = "0"; 
+    ani2 = "<"; 
+    ani3 = "<"; 
+    ani4 = "<"; 
+    ani5 = "<"; 
+    ani6 = "<"; 
+    ani7 = "<";
+    ani8 = "<";  
     
   } else {
     circleH = vw * 14;
@@ -74,21 +99,22 @@ var tl = gsap.timeline( {
   scrollTrigger: {  
       trigger: ".section2",
       start: 'top top-=200',
-      end: 'bottom bottom', 
+      end: bottom, 
       scrub: true 
   }
 });
 
-tl.to(".movingText1", {duration: 1, ease: 'linear', x: -full}); 
-tl.to(".movingText2", {duration: 1, ease: 'linear', x: -half}, "<");
-tl.to(".movingText2", {duration: 1, ease: 'linear', x: -full2}, 2);
-tl.to(".movingText3", {duration: 1, ease: 'linear', x: -half}, "<");
-tl.to(".movingText3", {duration: 1, ease: 'linear', x: -half});
-tl.to("#firstImage", {duration: 2, ease: 'linear', x: -imageMove});
+
+tl.to(".movingText1", {duration: 1, ease: 'linear', x: -full}, ani1); 
+tl.to(".movingText2", {duration: 1, ease: 'linear', x: -half}, ani2);
+tl.to(".movingText2", {duration: 1, ease: 'linear', x: -full2}, ani3);
+tl.to(".movingText3", {duration: 1, ease: 'linear', x: -half}, ani4);
+tl.to(".movingText3", {duration: 1, ease: 'linear', x: -half}, ani5);
+tl.to("#firstImage", {duration: 2, ease: 'linear', x: -imageMove}, ani6);
 //tl.to("#firstImage", {duration: 2, ease: 'linear', y: -imageMoveUp}, "<-1");
-tl.to(".subsection2", {duration: 4, ease: 'linear', y: -fullh});
+tl.to(".subsection2", {duration: 4, ease: 'linear', y: -fullh}, ani7);
 //tl.to(".orangeNumberSection", {duration: 2, ease: 'linear', y: -fullM}, "<");
-tl.to("#stickyLogo", {duration: 1, ease: 'linear', opacity: 1}, "<");
+tl.to("#stickyLogo", {duration: 1, ease: 'linear', opacity: 1}, ani8);
 
 
 
