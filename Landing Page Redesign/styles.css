@@ -1103,12 +1103,15 @@ ul {
 
     /* Board of Advisors Popups */
     .overlay .box {
-        width: 35vw;
-        max-width: 35vw;
-        height: 35vw;
-        position: absolute;
-        top: 5vh;
-        left: 5vh;
+        width: 25vw;
+        max-width: 25vw;
+        height: 25vw;
+        position: relative;
+        float: left; 
+        top: 0; 
+        left: 0; 
+        margin-right: 3vw;
+        margin-bottom: 2vw; 
     }
 
     .exit {
@@ -1117,9 +1120,9 @@ ul {
     }
 
     .overlay .box .names {
-        font-size: 3vw;
+        font-size: 2.5vw;
         padding: 1vw;
-        padding-left: 2vw; 
+        padding-left: 1vw; 
     }
 
     .overlayContent {
@@ -1133,6 +1136,19 @@ ul {
         box-shadow: 0 4px 8px 0 rgb(0 0 0 / 27%), 0 6px 20px 0 rgb(0 0 0 / 27%);
         box-sizing: border-box;
         border-radius: 1vw 1vw 1vw 1vw;
+        padding: 8vw; 
+    }
+
+    .text {
+        position: relative;
+        width: 100%; 
+        margin-left: 0;
+        padding: 0vw;
+        padding-bottom: 1vw;
+        padding-top: 5vh;
+        padding-left: 0;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 2vw;
     }
 
     /* Contact Section */
