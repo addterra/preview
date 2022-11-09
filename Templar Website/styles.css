@@ -119,6 +119,15 @@ header {
     position: relative; 
 }
 
+.subsection2 {
+    max-width: 90vw; 
+    padding-left: 2vw; 
+    align-items: center; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+}
+
 .title_header {
     width: 100%; 
     max-width: 100%; 
@@ -146,8 +155,9 @@ header {
     display: block; 
     max-width: 70vw; 
     width: 70vw; 
-    margin: auto; 
-    padding-right: 5.5vw;   
+    margin: auto;  
+    grid-column: 1/4;
+    grid-row: 1/2;   
 }
 
 .logo_gif:hover {
@@ -163,11 +173,14 @@ p {
 .about_text_left {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    position: absolute; 
+    width: 17vw;
     font-size: 2vw;
+    grid-column: 1/2; 
+    grid-row: 1/2;
+    justify-self: right; 
+    /* position: absolute;  
     top: 40vh; 
-    left: 20vw; 
-    width: 17vw;   
+    left: 20vw;  */  
 }
 
 .about_text_left .word1 {
@@ -189,9 +202,13 @@ p {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr; 
     font-size: 2vw; 
+    /* 
     position: absolute; 
     top: 40vh; 
-    right: 24vw; 
+    right: 24vw; */
+    grid-column: 3/4; 
+    grid-row: 1/2;
+    align-self: left; 
     width: 17vw; 
 }
 
@@ -305,6 +322,29 @@ p {
     height: 100vh; 
     min-height: 100vh;
     padding-top: 8vh;  
+}
+
+.bespoke_text {
+    width: 80%;
+    margin: auto; 
+    padding: 0; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    align-items: center; 
+}
+
+.gear_image {
+    max-width: 35vw; 
+    margin: 0; 
+    grid-column: 1/2; 
+}
+
+.bespoke_paragraph{
+    font-family: 'Quicksand', sans-serif; 
+    font-weight: 300;
+    font-size: 1.4vw; 
+    grid-column: 2/4;
+    color: rgba(255, 255, 255, 0.717); 
 }
 
 /* Section 5 Contact */
