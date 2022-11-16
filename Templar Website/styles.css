@@ -128,12 +128,49 @@ header {
     grid-template-rows: 1fr; 
 }
 
+/* CSS animation for the titles */
+
+/* move right to left */
+@keyframes left {
+    0% { margin-left: 40vw; }
+    85% { margin-left: -1vw; }
+    90% { margin-left: -1vw; }
+    100% { margin-left: 0vw; }
+}
+
+/* move left to right */ 
+
+@keyframes right {
+    0% { margin-left: 40vw; }
+    85% { margin-left: -1vw; }
+    90% { margin-left: -1vw; }
+    100% { margin-left: 0vw; }
+}
+
+#title1 {
+    animation-duration: 2s; 
+}
+
+#title2 {
+    animation-name: right; 
+    animation-duration: 2s; 
+}
+
+#title3 {
+    animation-duration: 2s; 
+}
+
+#title4 {
+    animation-duration: 2s; 
+}
+
 .title_header {
     width: 100%; 
     max-width: 100%; 
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
 }
+
 
 .border {
     grid-column: 3/6; 
@@ -241,14 +278,15 @@ p {
     border-bottom: 2px solid rgba(255, 255, 255, 0.761); 
 }
 
-.title2 {
+.title_2 {
     text-align: right; 
     color: rgba(255, 255, 255, 0.761); 
     font-family: 'Quicksand', sans-serif; 
     font-weight: 300; 
     font-size: 4vw; 
     margin-bottom: 1vh; 
-    padding-right: 1vw;  
+    padding-right: 1vw;
+    margin-right: 0;   
 }
 
 .services_grid {
