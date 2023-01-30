@@ -547,8 +547,8 @@ ul {
 
 .image {
     margin-left: 30px;
-    max-width: 40vw;
-    width: 40vw;  
+    max-width: 45vw;
+    width: 45vw;  
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.274), 0 6px 20px 0 rgba(0, 0, 0, 0.269);
 }
 
@@ -562,7 +562,7 @@ ul {
 }
 
 .number3Left .line {
-    width: 20vw; 
+    width: 21vw; 
 }
 
 .number3Right {
@@ -601,9 +601,9 @@ ul {
 
 #image3 {
     margin-left: 30px;
-    margin-right: 10vw; 
-    max-width: 40vw; 
-    width: 48vw;   
+    margin-right: 3vw; 
+    max-width: 47vw; 
+    width: 47vw;   
     float: right; 
 }
 
@@ -611,6 +611,10 @@ ul {
     width: 49.8%;
     margin-left: -0.1%; 
     border: none; 
+}
+
+.number3Left .lines2 p {
+    font-size: 1.3vw; 
 }
 
 .number3Left p {
@@ -631,7 +635,7 @@ ul {
 }
 
 .lines2 p {
-    padding-right: 1vw; 
+    padding-right: 0.5vw; 
 }
 
 /* number 4 section */
@@ -1423,7 +1427,7 @@ ul {
 
     .section1{
         position: relative;
-        height: 130vh; 
+        height: 80vh; 
         max-height: 130vh; 
     }
 
@@ -1611,6 +1615,7 @@ ul {
     /* Static Numbers Section */
     .orangeNumberSection { 
         margin-top: -100vh;
+        border: none; 
         padding-left: 10vw; 
         padding-right: 10vw; 
         display: grid;
@@ -1618,6 +1623,11 @@ ul {
         /* grid-template-rows: fit-content(1fr 1fr 1fr 1fr) !important; */
         grid-template-rows: auto; 
         margin-bottom: 0; 
+    }
+
+    .image {
+        max-width: 65vw; 
+        width: 65vw;
     }
 
     .numberBox h3 {
@@ -1632,7 +1642,7 @@ ul {
         grid-row: 3/4;
         grid-column: 1/4;
         width: 100%; 
-        border-left: 1.8px solid black; 
+        border: none; 
         padding-bottom: 10vh; 
     }
 
@@ -1705,12 +1715,13 @@ ul {
 
     #mobileLines2 {
         display: block; 
+        width: 70vw; 
     }
 
     .number2Left {
         max-width: 100%; 
-        border-right: 1.8px solid black; 
-        border-top: 1.8px solid black; 
+        border-right: none; 
+        border: none; 
         grid-column: 1/4; 
         grid-row: 2/3; 
         padding-bottom: 20vmin; 
@@ -2075,8 +2086,13 @@ ul {
     display: block;
     color: #fe7a00;
     font-family: "Quicksand";
-    font-size: 18px;
+    font-size: 23px;
 }
+
+.new-logos {
+    max-width: 13vw; 
+}
+
 .clearfix {clear: both;}
 .txt-orange {
     color: #fe7a00;
