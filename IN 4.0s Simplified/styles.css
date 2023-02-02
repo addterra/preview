@@ -396,6 +396,8 @@ ul {
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 1fr;  
     margin-top: 5vh; 
+    position: relative; 
+    z-index: 50; 
 }
 
 .split-image img {
@@ -410,7 +412,7 @@ ul {
     grid-row: 1/2;  
     height: 29vw; 
     position: relative; 
-    z-index: 3; 
+    z-index: 51; 
 }
 
 .consulting {
@@ -418,7 +420,7 @@ ul {
     grid-row: 1/2; 
     height: 100%; 
     position: relative; 
-    z-index: 3; 
+    z-index: 51; 
 }
 
 .optimus:hover {
