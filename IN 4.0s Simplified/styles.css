@@ -390,8 +390,8 @@ ul {
 /*  Consulting and Optimus Split Image */
 
 .split-image {
-    max-width: 100%;
-    width: 100%; 
+    max-width: 100vw;
+    width: 100vw; 
     display: grid; 
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 1fr;  
@@ -401,8 +401,8 @@ ul {
 }
 
 .split-image img {
-    max-width: 100%;
-    width: 100%;  
+    max-width: 100vw;
+    width: 100vw;  
     grid-column: 1/3; 
     grid-row: 1/2; 
 }
