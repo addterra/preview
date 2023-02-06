@@ -378,7 +378,7 @@
      }
 
 	 .linkedin-logo {
-		max-width: 10vmax; 
+		max-width: 5vmax; 
 		margin-left: 10vw; 
 	 }
 
